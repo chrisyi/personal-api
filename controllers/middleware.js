@@ -1,3 +1,5 @@
+const skillz = require('../skillz')
+
 module.exports = {
   addHeaders: function(req, res, next) {
     res.status(200).set({
@@ -11,4 +13,9 @@ module.exports = {
     });
     next();
   },
+  generateID: function (req, res, next) {
+      req.body.id = skillz.skillz.length + 1;
+      console.log(req.body.id);
+      next();
+  }
 }

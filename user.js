@@ -1,9 +1,10 @@
-var user = {
+module.exports = {
   name: 'Chris',
   location: 'Dallas',
   occupations: ['pharmacy', 'mosquito'],
   hobbies: [
     {
+      id:1,
       name: 'sleeping',
       type: 'physical'
     },
@@ -50,4 +51,3 @@ var user = {
     }
   ]
 };
-module.exports = user;
