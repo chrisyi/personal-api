@@ -28,7 +28,7 @@ app.post('/occupations', mainCtrl.postOccupations)
 app.post('/family', mainCtrl.postFamily)
 app.post('/restaurants', mainCtrl.postRestaurants)
 app.get('/skillz', mainCtrl.getSkillz)
-app.post('/skillz', middleware.generateId, mainCtrl.postSkillz)
+app.post('/skillz', mainCtrl.postSkillz)
 
 
 app.listen(3000, function() {

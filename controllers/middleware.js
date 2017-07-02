@@ -15,7 +15,6 @@ module.exports = {
   },
   generateID: function (req, res, next) {
       req.body.id = skillz.skillz.length + 1;
-      console.log(req.body.id);
       next();
   }
 }

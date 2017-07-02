@@ -99,6 +99,7 @@ module.exports = {
         return res.status(200).json(skillz)
     },
     postSkillz(req, res) {
+        skillz.skillz.push(req.body)
         return res.status(200).json(skillz.skillz)
     }
 }
